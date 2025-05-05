@@ -1,0 +1,206 @@
+/* css/style2.css - estilo para AURUM similar al index */
+
+/* Variables de color */
+:root {
+    --color-oro: #bfa14b;
+    --color-fondo: #000;
+    --color-texto: #ddd;
+    --color-texto-claro: #fff;
+  }
+  
+  /* Reset y base */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  
+  /* Header fijo */
+  header {
+    background-color: rgba(0,0,0,0.85);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-oro);
+    z-index: 1001;
+    box-sizing: border-box;
+    height: 70px;
+    color: var(--color-oro);
+    font-weight: 700;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    cursor: default;
+  }
+  
+  nav a {
+    color: var(--color-oro);
+    margin-left: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  nav a:hover {
+    color: var(--color-texto-claro);
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 2rem 3rem 2rem; /* padding top para no tapar header */
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Títulos */
+  h2 {
+    color: var(--color-oro);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: none;
+  }
+  
+  h3 {
+    color: var(--color-oro);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /* Párrafos */
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+  }
+  
+  /* Tabla de precios */
+  table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    border-collapse: collapse;
+    background: #fff;
+    color: #000;
+    border: 1px solid var(--color-oro);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  thead tr {
+    background: var(--color-oro);
+    color: #000;
+  }
+  
+  th, td {
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--color-oro);
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* Formulario de contacto */
+  form {
+    max-width: 600px;
+    margin: 2rem auto 4rem auto;
+    background: #111;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-oro);
+    box-shadow: 0 0 10px rgba(191, 161, 75, 0.3);
+  }
+  
+  form label {
+    color: var(--color-oro);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    background: #111;
+    border: 1px solid var(--color-oro);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form textarea:focus {
+    border-color: #d4bf5a;
+    outline: none;
+  }
+  
+  form input[type="submit"] {
+    background: var(--color-oro);
+    color: #000;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  
+  form input[type="submit"]:hover {
+    background: #d4bf5a;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+    color: var(--color-oro);
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav a {
+      margin-left: 1rem;
+      font-size: 0.9rem;
+    }
+    .container {
+      padding: 100px 1rem 3rem 1rem;
+    }
+    table {
+      font-size: 0.9rem;
+    }
+  }
+  
